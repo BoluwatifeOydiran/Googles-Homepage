@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body-center {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+img {
+  margin: -10rem 0 2rem 0;
+}
+
+.body-input {
+  position: relative;
+}
+
+input {
+  width: 35rem;
+  height: 3em;
+  border: none;
+  box-shadow: 0.5px 0.5px 5px 5px lightgrey;
+  border-radius: 30px;
+}
+
+input[value^="Search"] {
+  color: darkgray;
+  padding-left: 5em;
+  letter-spacing: 2px;
+  font-weight: lighter;
+}
+
+input:focus {
+  outline: none;
+}
+
+.body-input i {
+  position: absolute;
+}
+
+.icon1,
+.icon2 {
+  top: 0px;
+  padding: 10px;
+  min-width: 40px;
+}
+
+.icon1 {
+  left: 20px;
+}
+
+.icon2 {
+  right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  input {
+    width: 80vw;
+  }
+}
